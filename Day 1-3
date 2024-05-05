@@ -1,0 +1,1189 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\JoanL> ssh -i C:\Users\JoanL\Downloads\LinuxUpSkillServer_key.pem joanlora@52.170.57.166
+The authenticity of host '52.170.57.166 (52.170.57.166)' can't be established.
+ED25519 key fingerprint is SHA256:evutahXpArQMyifCyCrGhDz0NNym+eButLg7NO0IcGY.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '52.170.57.166' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 6.5.0-1019-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+  System information as of Sun May  5 01:06:39 UTC 2024
+
+  System load:  0.22314453125     Processes:             104
+  Usage of /:   2.4% of 61.84GB   Users logged in:       0
+  Memory usage: 34%               IPv4 address for eth0: 10.1.1.4
+  Swap usage:   0%
+
+Expanded Security Maintenance for Applications is not enabled.
+
+1 update can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+joanlora@LinuxUpSkillServer:~$ sudo apt update
+Get:1 http://azure.archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+Get:2 http://azure.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Hit:4 http://azure.archive.ubuntu.com/ubuntu jammy-security InRelease
+Get:5 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1395 kB]
+Get:6 http://azure.archive.ubuntu.com/ubuntu jammy/main Translation-en [510 kB]
+Get:7 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 c-n-f Metadata [30.3 kB]
+Get:8 http://azure.archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [129 kB]
+Get:9 http://azure.archive.ubuntu.com/ubuntu jammy/restricted Translation-en [18.6 kB]
+Get:10 http://azure.archive.ubuntu.com/ubuntu jammy/restricted amd64 c-n-f Metadata [488 B]
+Get:11 http://azure.archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:12 http://azure.archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:13 http://azure.archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:14 http://azure.archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:15 http://azure.archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:16 http://azure.archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:17 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1612 kB]
+Get:18 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [304 kB]
+Get:19 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [16.1 kB]
+Get:20 http://azure.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1830 kB]
+Get:21 http://azure.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [311 kB]
+Get:22 http://azure.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [520 B]
+Get:23 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1072 kB]
+Get:24 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [245 kB]
+Get:25 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [22.1 kB]
+Get:26 http://azure.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [42.7 kB]
+Get:27 http://azure.archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [10.4 kB]
+Get:28 http://azure.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [472 B]
+Get:29 http://azure.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [67.1 kB]
+Get:30 http://azure.archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [11.0 kB]
+Get:31 http://azure.archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:32 http://azure.archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:33 http://azure.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [27.2 kB]
+Get:34 http://azure.archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.2 kB]
+Get:35 http://azure.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B]
+Get:36 http://azure.archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 28.5 MB in 6s (4983 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+joanlora@LinuxUpSkillServer:~$ sudo apt update
+Hit:1 http://azure.archive.ubuntu.com/ubuntu jammy InRelease
+Hit:2 http://azure.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:3 http://azure.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Hit:4 http://azure.archive.ubuntu.com/ubuntu jammy-security InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+joanlora@LinuxUpSkillServer:~$ sudo apt upgrade
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+The following packages will be upgraded:
+  distro-info-data landscape-common
+2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 94.0 kB of archives.
+After this operation, 10.2 kB of additional disk space will be used.
+Do you want to continue? [Y/n] n
+Abort.
+joanlora@LinuxUpSkillServer:~$ help
+GNU bash, version 5.1.16(1)-release (x86_64-pc-linux-gnu)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                    history [-c] [-d offset] [n]>
+ (( expression ))                if COMMANDS; then COMMANDS; >
+ . filename [arguments]          jobs [-lnprs] [jobspec ...] >
+ :                               kill [-s sigspec | -n signum>
+ [ arg... ]                      let arg [arg ...]
+ [[ expression ]]                local [option] name[=value] >
+ alias [-p] [name[=value] ... >  logout [n]
+ bg [job_spec ...]               mapfile [-d delim] [-n count>
+ bind [-lpsvPSVX] [-m keymap] >  popd [-n] [+N | -N]
+ break [n]                       printf [-v var] format [argu>
+ builtin [shell-builtin [arg .>  pushd [-n] [+N | -N | dir]
+ caller [expr]                   pwd [-LP]
+ case WORD in [PATTERN [| PATT>  read [-ers] [-a array] [-d d>
+ cd [-L|[-P [-e]] [-@]] [dir]    readarray [-d delim] [-n cou>
+ command [-pVv] command [arg .>  readonly [-aAf] [name[=value>
+ compgen [-abcdefgjksuv] [-o o>  return [n]
+ complete [-abcdefgjksuv] [-pr>  select NAME [in WORDS ... ;]>
+ compopt [-o|+o option] [-DEI]>  set [-abefhkmnptuvxBCHP] [-o>
+ continue [n]                    shift [n]
+ coproc [NAME] command [redire>  shopt [-pqsu] [-o] [optname >
+ declare [-aAfFgiIlnrtux] [-p]>  source filename [arguments]
+ dirs [-clpv] [+N] [-N]          suspend [-f]
+ disown [-h] [-ar] [jobspec ..>  test [expr]
+ echo [-neE] [arg ...]           time [-p] pipeline
+ enable [-a] [-dnps] [-f filen>  times
+ eval [arg ...]                  trap [-lp] [[arg] signal_spe>
+ exec [-cl] [-a name] [command>  true
+ exit [n]                        type [-afptP] name [name ..>
+ export [-fn] [name[=value] ..>  typeset [-aAfFgiIlnrtux] [-p>
+ false                           ulimit [-SHabcdefiklmnpqrstu>
+ fc [-e ename] [-lnr] [first] >  umask [-p] [-S] [mode]
+ fg [job_spec]                   unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do>  unset [-f] [-v] [-n] [name .>
+ for (( exp1; exp2; exp3 )); d>  until COMMANDS; do COMMANDS;>
+ function name { COMMANDS ; } >  variables - Names and meanin>
+ getopts optstring name [arg .>  wait [-fn] [-p var] [id ...]
+ hash [-lr] [-p pathname] [-dt>  while COMMANDS; do COMMANDS;>
+ help [-dms] [pattern ...]       { COMMANDS ; }
+joanlora@LinuxUpSkillServer:~$ ^C
+joanlora@LinuxUpSkillServer:~$ ^C
+joanlora@LinuxUpSkillServer:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 22.04.4 LTS
+Release:        22.04
+Codename:       jammy
+joanlora@LinuxUpSkillServer:~$ uptime
+ 01:56:28 up  1:18,  1 user,  load average: 0.00, 0.00, 0.00
+joanlora@LinuxUpSkillServer:~$ whoami
+joanlora
+joanlora@LinuxUpSkillServer:~$ uname -a
+Linux LinuxUpSkillServer 6.5.0-1019-azure #20~22.04.1-Ubuntu SMP Wed Apr  3 03:28:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+joanlora@LinuxUpSkillServer:~$ lscpu
+Architecture:            x86_64
+  CPU op-mode(s):        32-bit, 64-bit
+  Address sizes:         46 bits physical, 48 bits virtual
+  Byte Order:            Little Endian
+CPU(s):                  1
+  On-line CPU(s) list:   0
+Vendor ID:               GenuineIntel
+  Model name:            Intel(R) Xeon(R) Platinum 8171M CPU @ 2
+                         .60GHz
+    CPU family:          6
+    Model:               85
+    Thread(s) per core:  1
+    Core(s) per socket:  1
+    Socket(s):           1
+    Stepping:            4
+    BogoMIPS:            4190.45
+    Flags:               fpu vme de pse tsc msr pae mce cx8 apic
+                          sep mtrr pge mca cmov pat pse36 clflus
+                         h mmx fxsr sse sse2 ss syscall nx pdpe1
+                         gb rdtscp lm constant_tsc rep_good nopl
+                          xtopology cpuid pni pclmulqdq ssse3 fm
+                         a cx16 pcid sse4_1 sse4_2 movbe popcnt
+                         aes xsave avx f16c rdrand hypervisor la
+                         hf_lm abm 3dnowprefetch invpcid_single
+                         pti fsgsbase bmi1 hle avx2 smep bmi2 er
+                         ms invpcid rtm avx512f avx512dq rdseed
+                         adx smap clflushopt avx512cd avx512bw a
+                         vx512vl xsaveopt xsavec xsaves md_clear
+Virtualization features:
+  Hypervisor vendor:     Microsoft
+  Virtualization type:   full
+Caches (sum of all):
+  L1d:                   32 KiB (1 instance)
+  L1i:                   32 KiB (1 instance)
+  L2:                    1 MiB (1 instance)
+  L3:                    35.8 MiB (1 instance)
+NUMA:
+  NUMA node(s):          1
+  NUMA node0 CPU(s):     0
+Vulnerabilities:
+  Gather data sampling:  Unknown: Dependent on hypervisor status
+  Itlb multihit:         KVM: Mitigation: VMX unsupported
+  L1tf:                  Mitigation; PTE Inversion
+  Mds:                   Mitigation; Clear CPU buffers; SMT Host
+                          state unknown
+  Meltdown:              Mitigation; PTI
+  Mmio stale data:       Vulnerable: Clear CPU buffers attempted
+                         , no microcode; SMT Host state unknown
+  Retbleed:              Vulnerable
+  Spec rstack overflow:  Not affected
+  Spec store bypass:     Vulnerable
+  Spectre v1:            Mitigation; usercopy/swapgs barriers an
+                         d __user pointer sanitization
+  Spectre v2:            Mitigation; Retpolines, STIBP disabled,
+                          RSB filling, PBRSB-eIBRS Not affected
+  Srbds:                 Not affected
+  Tsx async abort:       Mitigation; Clear CPU buffers; SMT Host
+                          state unknown
+joanlora@LinuxUpSkillServer:~$ lsblk
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+loop0     7:0    0 63.9M  1 loop /snap/core20/2264
+loop1     7:1    0   87M  1 loop /snap/lxd/28373
+loop2     7:2    0 38.7M  1 loop /snap/snapd/21465
+sda       8:0    0   64G  0 disk
+├─sda1    8:1    0 63.9G  0 part /
+├─sda14   8:14   0    4M  0 part
+└─sda15   8:15   0  106M  0 part /boot/efi
+sdb       8:16   0    4G  0 disk
+└─sdb1    8:17   0    4G  0 part /mnt
+sr0      11:0    1  628K  0 rom
+joanlora@LinuxUpSkillServer:~$ lsusb
+joanlora@LinuxUpSkillServer:~$ lspci
+joanlora@LinuxUpSkillServer:~$ lscpu
+Architecture:            x86_64
+  CPU op-mode(s):        32-bit, 64-bit
+  Address sizes:         46 bits physical, 48 bits virtual
+  Byte Order:            Little Endian
+CPU(s):                  1
+  On-line CPU(s) list:   0
+Vendor ID:               GenuineIntel
+  Model name:            Intel(R) Xeon(R) Platinum 8171M CPU @ 2
+                         .60GHz
+    CPU family:          6
+    Model:               85
+    Thread(s) per core:  1
+    Core(s) per socket:  1
+    Socket(s):           1
+    Stepping:            4
+    BogoMIPS:            4190.45
+    Flags:               fpu vme de pse tsc msr pae mce cx8 apic
+                          sep mtrr pge mca cmov pat pse36 clflus
+                         h mmx fxsr sse sse2 ss syscall nx pdpe1
+                         gb rdtscp lm constant_tsc rep_good nopl
+                          xtopology cpuid pni pclmulqdq ssse3 fm
+                         a cx16 pcid sse4_1 sse4_2 movbe popcnt
+                         aes xsave avx f16c rdrand hypervisor la
+                         hf_lm abm 3dnowprefetch invpcid_single
+                         pti fsgsbase bmi1 hle avx2 smep bmi2 er
+                         ms invpcid rtm avx512f avx512dq rdseed
+                         adx smap clflushopt avx512cd avx512bw a
+                         vx512vl xsaveopt xsavec xsaves md_clear
+Virtualization features:
+  Hypervisor vendor:     Microsoft
+  Virtualization type:   full
+Caches (sum of all):
+  L1d:                   32 KiB (1 instance)
+  L1i:                   32 KiB (1 instance)
+  L2:                    1 MiB (1 instance)
+  L3:                    35.8 MiB (1 instance)
+NUMA:
+  NUMA node(s):          1
+  NUMA node0 CPU(s):     0
+Vulnerabilities:
+  Gather data sampling:  Unknown: Dependent on hypervisor status
+  Itlb multihit:         KVM: Mitigation: VMX unsupported
+  L1tf:                  Mitigation; PTE Inversion
+  Mds:                   Mitigation; Clear CPU buffers; SMT Host
+                          state unknown
+  Meltdown:              Mitigation; PTI
+  Mmio stale data:       Vulnerable: Clear CPU buffers attempted
+                         , no microcode; SMT Host state unknown
+  Retbleed:              Vulnerable
+  Spec rstack overflow:  Not affected
+  Spec store bypass:     Vulnerable
+  Spectre v1:            Mitigation; usercopy/swapgs barriers an
+                         d __user pointer sanitization
+  Spectre v2:            Mitigation; Retpolines, STIBP disabled,
+                          RSB filling, PBRSB-eIBRS Not affected
+  Srbds:                 Not affected
+  Tsx async abort:       Mitigation; Clear CPU buffers; SMT Host
+                          state unknown
+joanlora@LinuxUpSkillServer:~$ free -h.vmstat
+free: invalid option -- '.'
+
+Usage:
+ free [options]
+
+Options:
+ -b, --bytes         show output in bytes
+     --kilo          show output in kilobytes
+     --mega          show output in megabytes
+     --giga          show output in gigabytes
+     --tera          show output in terabytes
+     --peta          show output in petabytes
+ -k, --kibi          show output in kibibytes
+ -m, --mebi          show output in mebibytes
+ -g, --gibi          show output in gibibytes
+     --tebi          show output in tebibytes
+     --pebi          show output in pebibytes
+ -h, --human         show human-readable output
+     --si            use powers of 1000 not 1024
+ -l, --lohi          show detailed low and high memory statistics
+ -t, --total         show total for RAM + swap
+ -s N, --seconds N   repeat printing every N seconds
+ -c N, --count N     repeat printing N times, then exit
+ -w, --wide          wide output
+
+     --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see free(1).
+joanlora@LinuxUpSkillServer:~$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           883Mi       244Mi       152Mi       3.0Mi       486Mi       486Mi
+Swap:             0B          0B          0B
+joanlora@LinuxUpSkillServer:~$ vmstat
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0      0 155664  19564 478820    0    0   118   637   40   99  1  0 98  0  0
+joanlora@LinuxUpSkillServer:~$ top
+top - 01:59:58 up  1:22,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  99 total,   1 running,  98 sleeping,   0 stopped,   0 zombie
+%Cpu(s):   0.0/0.0     0[                                                                                                    ]
+MiB Mem :    883.6 total,    152.0 free,    244.6 used,    487.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    487.2 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                     Help for Windows / Field Groups - "Current Window" =  1:Def
+
+. Use multiple windows, each with separate config opts (color,fields,sort,etc)
+. The 'current' window controls the Summary Area and responds to your Commands
+  . that window's task display can be turned Off & On, growing/shrinking others
+  . with NO task display, some commands will be disabled ('i','R','n','c', etc)
+    until a different window has been activated, making it the 'current' window
+. You change the 'current' window by:  1) cycling forward/backward; 2) choosing
+  a specific field group; or 3) exiting the color mapping or fields screens
+. Commands available anytime   -------------
+    A       . Alternate display mode toggle, show Single / Multiple windows
+    g       . Choose another field group and make it 'current', or change now
+              by selecting a number from:  1 =Def; 2 =Job; 3 =Mem; or 4 =Usr
+. Commands requiring 'A' mode  -------------
+    G       . Change the Name of the 'current' window/field group
+ *  a , w   . Cycle through all four windows:  'a' Forward; 'w' Backward
+ *  - , _   . Show/Hide:  '-' Current window; '_' all Visible/Invisible
+  The screen will be divided evenly between task displays.  But you can make
+  some larger or smaller, using 'n' and 'i' commands.  Then later you could:
+ *  = , +   . Rebalance tasks:  '=' Current window; '+' Every window
+              (this also forces the current or every window to become visible)
+
+In 'A' mode, '*' keys are your essential commands.  Please try the 'a' and 'w'
+commands plus the 'g' sub-commands NOW.  Press <Enter> to make 'Current'
+Help for Windows / Field Groups - "Current Window" =  1:Def
+
+. Use multiple windows, each with separate config opts (color,fields,sort,etc)
+. The 'current' window controls the Summary Area and responds to your Commands
+  . that window's task display can be turned Off & On, growing/shrinking others
+  . with NO task display, some commands will be disabled ('i','R','n','c', etc)
+    until a different window has been activated, making it the 'current' window
+. You change the 'current' window by:  1) cycling forward/backward; 2) choosing
+  a specific field group; or 3) exiting the color mapping or fields screens
+. Commands available anytime   -------------
+    A       . Alternate display mode toggle, show Single / Multiple windows
+    g       . Choose another field group and make it 'current', or change now
+              by selecting a number from:  1 =Def; 2 =Job; 3 =Mem; or 4 =Usr
+. Commands requiring 'A' mode  -------------
+    G       . Change the Name of the 'current' window/field group
+ *  a , w   . Cycle through all four windows:  'a' Forward; 'w' Backward
+ *  - , _   . Show/Hide:  '-' Current window; '_' all Visible/Invisible
+  The screen will be divided evenly between task displays.  But you can make
+  some larger or smaller, using 'n' and 'i' commands.  Then later you could:
+ *  = , +   . Rebalance tasks:  '=' Current window; '+' Every window
+              (this also forces the current or every window to become visible)
+
+In 'A' mode, '*' keys are your essential commands.  Please try the 'a' and 'w'
+commands plus the 'g' sub-commands NOW.  Press <Enter> to make 'Current'
+Help for Windows / Field Groups - "Current Window" =  1:Def
+
+. Use multiple windows, each with separate config opts (color,fields,sort,etc)
+. The 'current' window controls the Summary Area and responds to your Commands
+  . that window's task display can be turned Off & On, growing/shrinking others
+  . with NO task display, some commands will be disabled ('i','R','n','c', etc)
+    until a different window has been activated, making it the 'current' window
+. You change the 'current' window by:  1) cycling forward/backward; 2) choosing
+  a specific field group; or 3) exiting the color mapping or fields screens
+. Commands available anytime   -------------
+    A       . Alternate display mode toggle, show Single / Multiple windows
+    g       . Choose another field group and make it 'current', or change now
+              by selecting a number from:  1 =Def; 2 =Job; 3 =Mem; or 4 =Usr
+. Commands requiring 'A' mode  -------------
+    G       . Change the Name of the 'current' window/field group
+ *  a , w   . Cycle through all four windows:  'a' Forward; 'w' Backward
+ *  - , _   . Show/Hide:  '-' Current window; '_' all Visible/Invisible
+  The screen will be divided evenly between task displays.  But you can make
+  some larger or smaller, using 'n' and 'i' commands.  Then later you could:
+ *  = , +   . Rebalance tasks:  '=' Current window; '+' Every window
+              (this also forces the current or every window to become visible)
+
+In 'A' mode, '*' keys are your essential commands.  Please try the 'a' and 'w'
+commands plus the 'g' sub-commands NOW.  Press <Enter> to make 'Current'
+Help for Windows / Field Groups - "Current Window" =  1:Def
+
+. Use multiple windows, each with separate config opts (color,fields,sort,etc)
+. The 'current' window controls the Summary Area and responds to your Commands
+  . that window's task display can be turned Off & On, growing/shrinking others
+  . with NO task display, some commands will be disabled ('i','R','n','c', etc)
+    until a different window has been activated, making it the 'current' window
+. You change the 'current' window by:  1) cycling forward/backward; 2) choosing
+  a specific field group; or 3) exiting the color mapping or fields screens
+. Commands available anytime   -------------
+    A       . Alternate display mode toggle, show Single / Multiple windows
+    g       . Choose another field group and make it 'current', or change now
+              by selecting a number from:  1 =Def; 2 =Job; 3 =Mem; or 4 =Usr
+. Commands requiring 'A' mode  -------------
+    G       . Change the Name of the 'current' window/field group
+ *  a , w   . Cycle through all four windows:  'a' Forward; 'w' Backward
+ *  - , _   . Show/Hide:  '-' Current window; '_' all Visible/Invisible
+  The screen will be divided evenly between task displays.  But you can make
+  some larger or smaller, using 'n' and 'i' commands.  Then later you could:
+ *  = , +   . Rebalance tasks:  '=' Current window; '+' Every window
+              (this also forces the current or every window to become visible)
+
+In 'A' mode, '*' keys are your essential commands.  Please try the 'a' and 'w'
+commands plus the 'g' sub-commands NOW.  Press <Enter> to make 'Current'
+top - 02:00:03 up  1:22,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  99 total,   2 running,  97 sleeping,   0 stopped,   0 zombie
+%Cpu(s):   0.2/1.2     1[|                                                                                                   ]
+MiB Mem :    883.6 total,    152.0 free,    244.6 used,    487.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    487.2 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    252 root      20   0    4.2m   3.0m   2.0m S   0.6   0.3   0:02.38 hv_kvp_daemon
+    905 root      20   0    0.0m   0.0m   0.0m I   0.2   0.0   0:01.24 kworker/0:5-events
+   2024 root      20   0    0.0m   0.0m   0.0m R   0.2   0.0   0:00.29 kworker/u2:2-events_unbound
+   3442 joanlora  20   0   10.6m   3.8m   3.1m R   0.2   0.4   0:00.06 top
+Help for Interactive Commands - procps-ng 3.3.17
+Window 1:Def: Cumulative mode Off.  System: Delay 3.0 secs; Secure mode Off.
+
+  Z,B,E,e   Global: 'Z' colors; 'B' bold; 'E'/'e' summary/task memory scale
+  l,t,m,I   Toggle: 'l' load avg; 't' task/cpu; 'm' memory; 'I' Irix mode
+  0,1,2,3,4 Toggle: '0' zeros; '1/2/3' cpu/numa views; '4' cpus two abreast
+  f,F,X     Fields: 'f'/'F' add/remove/order/sort; 'X' increase fixed-width
+
+  L,&,<,> . Locate: 'L'/'&' find/again; Move sort column: '<'/'>' left/right
+  R,H,J,C . Toggle: 'R' Sort; 'H' Threads; 'J' Num justify; 'C' Coordinates
+  c,i,S,j . Toggle: 'c' Cmd name/line; 'i' Idle; 'S' Time; 'j' Str justify
+  x,y     . Toggle highlights: 'x' sort field; 'y' running tasks
+  z,b     . Toggle: 'z' color/mono; 'b' bold/reverse (only if 'x' or 'y')
+  u,U,o,O . Filter by: 'u'/'U' effective/any user; 'o'/'O' other criteria
+  n,#,^O  . Set: 'n'/'#' max tasks displayed; Show: Ctrl+'O' other filter(s)
+  V,v     . Toggle: 'V' forest view; 'v' hide/show forest view children
+
+  k,r       Manipulate tasks: 'k' kill; 'r' renice
+  d or s    Set update interval
+  W,Y,!     Write config file 'W'; Inspect other output 'Y'; Combine Cpus '!'
+  q         Quit
+          ( commands shown with '.' require a visible task display window )
+Press 'h' or '?' for help with Windows,
+Type 'q' or <Esc> to continue
+Help for Interactive Commands - procps-ng 3.3.17
+Window 1:Def: Cumulative mode Off.  System: Delay 3.0 secs; Secure mode Off.
+
+  Z,B,E,e   Global: 'Z' colors; 'B' bold; 'E'/'e' summary/task memory scale
+  l,t,m,I   Toggle: 'l' load avg; 't' task/cpu; 'm' memory; 'I' Irix mode
+  0,1,2,3,4 Toggle: '0' zeros; '1/2/3' cpu/numa views; '4' cpus two abreast
+  f,F,X     Fields: 'f'/'F' add/remove/order/sort; 'X' increase fixed-width
+
+  L,&,<,> . Locate: 'L'/'&' find/again; Move sort column: '<'/'>' left/right
+  R,H,J,C . Toggle: 'R' Sort; 'H' Threads; 'J' Num justify; 'C' Coordinates
+  c,i,S,j . Toggle: 'c' Cmd name/line; 'i' Idle; 'S' Time; 'j' Str justify
+  x,y     . Toggle highlights: 'x' sort field; 'y' running tasks
+  z,b     . Toggle: 'z' color/mono; 'b' bold/reverse (only if 'x' or 'y')
+  u,U,o,O . Filter by: 'u'/'U' effective/any user; 'o'/'O' other criteria
+  n,#,^O  . Set: 'n'/'#' max tasks displayed; Show: Ctrl+'O' other filter(s)
+  V,v     . Toggle: 'V' forest view; 'v' hide/show forest view children
+
+  k,r       Manipulate tasks: 'k' kill; 'r' renice
+  d or s    Set update interval
+  W,Y,!     Write config file 'W'; Inspect other output 'Y'; Combine Cpus '!'
+  q         Quit
+          ( commands shown with '.' require a visible task display window )
+Press 'h' or '?' for help with Windows,
+Type 'q' or <Esc> to continue
+top - 02:00:06 up  1:22,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  99 total,   1 running,  98 sleeping,   0 stopped,   0 zombie
+%Cpu(s):   0.0/0.6     1[|                                                                                                   ]
+MiB Mem :    883.6 total,    152.0 free,    244.6 used,    487.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    487.2 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   2637 joanlora  20   0   16.8m   7.9m   5.5m S   0.3   0.9   0:00.09 sshd
+top - 02:00:15 up  1:22,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  99 total,   1 running,  98 sleeping,   0 stopped,   0 zombie
+%Cpu(s):   0.1/0.0     0[                                                                                                    ]
+MiB Mem :    883.6 total,    152.0 free,    244.6 used,    487.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    487.3 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1047 root      20   0  325.2m  32.0m  11.6m S   0.1   3.6   0:04.06 python3
+   3442 joanlora  20   0   10.6m   3.8m   3.1m R   0.1   0.4   0:00.07 top
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+joanlora@LinuxUpSkillServer:~$ htop
+
+
+
+joanlora@LinuxUpSkillServer:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        62G  1.7G   61G   3% /
+tmpfs           442M     0  442M   0% /dev/shm
+tmpfs           177M  964K  176M   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+efivarfs        128M  9.8K  128M   1% /sys/firmware/efi/efivars
+/dev/sda15      105M  6.1M   99M   6% /boot/efi
+/dev/sdb1       3.9G   28K  3.7G   1% /mnt
+tmpfs            89M  4.0K   89M   1% /run/user/1000
+joanlora@LinuxUpSkillServer:~$ ip address
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 60:45:bd:d8:eb:50 brd ff:ff:ff:ff:ff:ff
+    inet 10.1.1.4/24 metric 100 brd 10.1.1.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::6245:bdff:fed8:eb50/64 scope link
+       valid_lft forever preferred_lft forever
+joanlora@LinuxUpSkillServer:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        62G  1.7G   61G   3% /
+tmpfs           442M     0  442M   0% /dev/shm
+tmpfs           177M  964K  176M   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+efivarfs        128M  9.8K  128M   1% /sys/firmware/efi/efivars
+/dev/sda15      105M  6.1M   99M   6% /boot/efi
+/dev/sdb1       3.9G   28K  3.7G   1% /mnt
+tmpfs            89M  4.0K   89M   1% /run/user/1000
+joanlora@LinuxUpSkillServer:~$ ifconfig
+Command 'ifconfig' not found, but can be installed with:
+sudo apt install net-tools
+joanlora@LinuxUpSkillServer:~$ ipconfig
+Command 'ipconfig' not found, did you mean:
+  command 'iconfig' from deb ipmiutil (3.1.8-1)
+  command 'iwconfig' from deb wireless-tools (30~pre9-13.1ubuntu4)
+  command 'ifconfig' from deb net-tools (1.60+git20181103.0eebece-1ubuntu5)
+Try: sudo apt install <deb name>
+joanlora@LinuxUpSkillServer:~$ iconfig
+Command 'iconfig' not found, but can be installed with:
+sudo apt install ipmiutil
+joanlora@LinuxUpSkillServer:~$ ip address
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 60:45:bd:d8:eb:50 brd ff:ff:ff:ff:ff:ff
+    inet 10.1.1.4/24 metric 100 brd 10.1.1.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::6245:bdff:fed8:eb50/64 scope link
+       valid_lft forever preferred_lft forever
+joanlora@LinuxUpSkillServer:~$ ifstat
+Command 'ifstat' not found, but can be installed with:
+sudo apt install ifstat
+joanlora@LinuxUpSkillServer:~$ netstat -i
+Command 'netstat' not found, but can be installed with:
+sudo apt install net-tools
+joanlora@LinuxUpSkillServer:~$ sudo iftop -i eth0
+sudo: iftop: command not found
+joanlora@LinuxUpSkillServer:~$ du -h
+4.0K    ./.config/procps
+8.0K    ./.config/htop
+16K     ./.config
+8.0K    ./.ssh
+4.0K    ./.cache
+44K     .
+joanlora@LinuxUpSkillServer:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        62G  1.7G   61G   3% /
+tmpfs           442M     0  442M   0% /dev/shm
+tmpfs           177M  964K  176M   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+efivarfs        128M  9.8K  128M   1% /sys/firmware/efi/efivars
+/dev/sda15      105M  6.1M   99M   6% /boot/efi
+/dev/sdb1       3.9G   28K  3.7G   1% /mnt
+tmpfs            89M  4.0K   89M   1% /run/user/1000
+joanlora@LinuxUpSkillServer:~$ man pwd
+joanlora@LinuxUpSkillServer:~$
+joanlora@LinuxUpSkillServer:~$ man cp
+joanlora@LinuxUpSkillServer:~$ joanlora@LinuxUpSkillServer:~$ mancp
+mancp: command not found
+joanlora@LinuxUpSkillServer:~$ man cp
+joanlora@LinuxUpSkillServer:~$ joanlora@LinuxUpSkillServer:~$ man ip address
+joanlora@LinuxUpSkillServer:~$ help
+GNU bash, version 5.1.16(1)-release (x86_64-pc-linux-gnu)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                    history [-c] [-d offset] [n]>
+ (( expression ))                if COMMANDS; then COMMANDS; >
+ . filename [arguments]          jobs [-lnprs] [jobspec ...] >
+ :                               kill [-s sigspec | -n signum>
+ [ arg... ]                      let arg [arg ...]
+ [[ expression ]]                local [option] name[=value] >
+ alias [-p] [name[=value] ... >  logout [n]
+ bg [job_spec ...]               mapfile [-d delim] [-n count>
+ bind [-lpsvPSVX] [-m keymap] >  popd [-n] [+N | -N]
+ break [n]                       printf [-v var] format [argu>
+ builtin [shell-builtin [arg .>  pushd [-n] [+N | -N | dir]
+ caller [expr]                   pwd [-LP]
+ case WORD in [PATTERN [| PATT>  read [-ers] [-a array] [-d d>
+ cd [-L|[-P [-e]] [-@]] [dir]    readarray [-d delim] [-n cou>
+ command [-pVv] command [arg .>  readonly [-aAf] [name[=value>
+ compgen [-abcdefgjksuv] [-o o>  return [n]
+ complete [-abcdefgjksuv] [-pr>  select NAME [in WORDS ... ;]>
+ compopt [-o|+o option] [-DEI]>  set [-abefhkmnptuvxBCHP] [-o>
+ continue [n]                    shift [n]
+ coproc [NAME] command [redire>  shopt [-pqsu] [-o] [optname >
+ declare [-aAfFgiIlnrtux] [-p]>  source filename [arguments]
+ dirs [-clpv] [+N] [-N]          suspend [-f]
+ disown [-h] [-ar] [jobspec ..>  test [expr]
+ echo [-neE] [arg ...]           time [-p] pipeline
+ enable [-a] [-dnps] [-f filen>  times
+ eval [arg ...]                  trap [-lp] [[arg] signal_spe>
+ exec [-cl] [-a name] [command>  true
+ exit [n]                        type [-afptP] name [name ..>
+ export [-fn] [name[=value] ..>  typeset [-aAfFgiIlnrtux] [-p>
+ false                           ulimit [-SHabcdefiklmnpqrstu>
+ fc [-e ename] [-lnr] [first] >  umask [-p] [-S] [mode]
+ fg [job_spec]                   unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do>  unset [-f] [-v] [-n] [name .>
+ for (( exp1; exp2; exp3 )); d>  until COMMANDS; do COMMANDS;>
+ function name { COMMANDS ; } >  variables - Names and meanin>
+ getopts optstring name [arg .>  wait [-fn] [-p var] [id ...]
+ hash [-lr] [-p pathname] [-dt>  while COMMANDS; do COMMANDS;>
+ help [-dms] [pattern ...]       { COMMANDS ; }
+joanlora@LinuxUpSkillServer:~$ sudo apt install tldr
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+
+No apt package "tldr", but there is a snap with that name.
+Try "snap install tldr"
+
+E: Unable to locate package tldr
+joanlora@LinuxUpSkillServer:~$ snap install tld
+error: access denied (try with sudo)
+joanlora@LinuxUpSkillServer:~$ snap install tldr
+error: access denied (try with sudo)
+joanlora@LinuxUpSkillServer:~$ sudo snap install tldr
+tldr 3.2.0 from K.B.Dharun Krishna (kbdk) installed
+joanlora@LinuxUpSkillServer:~$ tldr pwd
+
+  pwd
+
+  Print name of current/working directory.
+  More information: https://www.gnu.org/software/coreutils/pwd.
+
+  - Print the current directory:
+    pwd
+
+  - Print the current directory, and resolve all symlinks (i.e. show the "physical" path):
+    pwd --physical
+
+  - Print the current logical directory:
+    pwd --logical
+
+joanlora@LinuxUpSkillServer:~$ tldr ip adress
+`ip-adress` documentation is not available.
+If you want to contribute it, feel free to send a pull request to: https://github.com/tldr-pages/tldr
+joanlora@LinuxUpSkillServer:~$ tldr ip address
+
+  ip address
+
+  IP Address management subcommand.
+  More information: https://manned.org/ip-address.
+
+  - List network interfaces and their associated IP addresses:
+    ip address
+
+  - Filter to show only active network interfaces:
+    ip address show up
+
+  - Display information about a specific network interface:
+    ip address show dev eth0
+
+  - Add an IP address to a network interface:
+    ip address add ip_address dev eth0
+
+  - Remove an IP address from a network interface:
+    ip address delete ip_address dev eth0
+
+  - Delete all IP addresses in a given scope from a network interface:
+    ip address flush dev eth0 scope global|host|link
+
+joanlora@LinuxUpSkillServer:~$ man -k
+apropos what?
+joanlora@LinuxUpSkillServer:~$ man -k "create new server"
+create new server: nothing appropriate.
+joanlora@LinuxUpSkillServer:~$ man -k "create server"
+create server: nothing appropriate.
+joanlora@LinuxUpSkillServer:~$ man -k "create folder"
+create folder: nothing appropriate.
+joanlora@LinuxUpSkillServer:~$ man -k "create"
+addgnupghome (8)     - Create .gnupg home directories
+ar (1)               - create, modify, and extract from archives
+bpftool-iter (8)     - tool to create BPF iterators
+btrfs-image (8)      - create/restore an image of the filesystem
+c_rehash (1ssl)      - Create symbolic links to files named b...
+catman (8)           - create or update the pre-formatted man...
+dmmp_context_new (3) - Create struct dmmp_context.
+git-archive (1)      - Create an archive of files from a name...
+git-branch (1)       - List, create, or delete branches
+git-commit-tree (1)  - Create a new commit object
+git-get-tar-commit-id (1) - Extract commit ID from an archive...
+git-hash-object (1)  - Compute object ID and optionally creat...
+git-init (1)         - Create an empty Git repository or rein...
+git-init-db (1)      - Creates an empty Git repository
+git-mktag (1)        - Creates a tag object with extra valida...
+git-pack-objects (1) - Create a packed archive of objects
+git-replace (1)      - Create, list, delete refs to replace o...
+git-tag (1)          - Create, list, delete or verify a tag o...
+git-unpack-file (1)  - Creates a temporary file with a blob's...
+git-write-tree (1)   - Create a tree object from the current ...
+groupadd (8)         - create a new group
+iconvconfig (8)      - create iconv module configuration cache
+kpartx (8)           - Create device maps from partition tables.
+link (1)             - call the link function to create a lin...
+luksformat (8)       - Create and format an encrypted LUKS de...
+lvcreate (8)         - Create a logical volume
+lvmdump (8)          - create lvm2 information dumps for diag...
+make-bcache (8)      - create a cache device
+mandb (8)            - create or update the manual page index...
+mkdosfs (8)          - create an MS-DOS FAT filesystem
+mke2fs (8)           - create an ext2/ext3/ext4 file system
+mkfs.btrfs (8)       - create a btrfs filesystem
+mkfs.ext2 (8)        - create an ext2/ext3/ext4 file system
+mkfs.ext3 (8)        - create an ext2/ext3/ext4 file system
+mkfs.ext4 (8)        - create an ext2/ext3/ext4 file system
+mkfs.fat (8)         - create an MS-DOS FAT filesystem
+mkfs.msdos (8)       - create an MS-DOS FAT filesystem
+mkfs.ntfs (8)        - create an NTFS file system
+mkfs.vfat (8)        - create an MS-DOS FAT filesystem
+mkhomedir_helper (8) - Helper binary that creates home direct...
+mklost+found (8)     - create a lost+found directory on a mou...
+mkntfs (8)           - create an NTFS file system
+mksquashfs (1)       - tool to create and append to squashfs ...
+mktemp (1)           - create a temporary file or directory
+newusers (8)         - update and create new users in batch
+nvme-capacity-mgmt (1) - Send capacity management command to ...
+nvme-create-ns (1)   - Send NVMe Namespace management command...
+nvme-lnvm-create (1) - Instantiate a target on top of a Light...
+openssl-crl2pkcs7 (1ssl) - Create a PKCS#7 structure from a C...
+openssl-nseq (1ssl)  - create or examine a Netscape certifica...
+openssl-rehash (1ssl) - Create symbolic links to files named ...
+pam_mkhomedir (8)    - PAM module to create users home directory
+pam_namespace_helper (8) - Helper binary that creates home di...
+perf-annotate (1)    - Read perf.data (created by perf record...
+perf-archive (1)     - Create archive with object files with ...
+perf-report (1)      - Read perf.data (created by perf record...
+perf-script (1)      - Read perf.data (created by perf record...
+pvcreate (8)         - Initialize physical volume(s) for use ...
+sbsiglist (1)        - Create EFI_SIGNATURE_LIST signature da...
+sln (8)              - create symbolic links
+streamzip (1)        - create a zip file from stdin
+systemd-tmpfiles (8) - Creates, deletes and cleans up volatil...
+systemd-tmpfiles-clean.service (8) - Creates, deletes and cle...
+systemd-tmpfiles-clean.timer (8) - Creates, deletes and clean...
+systemd-tmpfiles-setup-dev.se... (8) - Creates, deletes and c...
+systemd-tmpfiles-setup.service (8) - Creates, deletes and cle...
+tempfile (1)         - create a temporary file in a safe manner
+update-info-dir (8)  - update or create index file from all i...
+useradd (8)          - create a new user or update default ne...
+uuidgen (1)          - create a new UUID value
+vgcreate (8)         - Create a volume group
+vgmknodes (8)        - Create the special files for volume gr...
+x86_64-linux-gnu-ar (1) - create, modify, and extract from ar...
+xfs_mkfile (8)       - create an XFS file
+joanlora@LinuxUpSkillServer:~$ help ip address
+-bash: help: no help topics match `address'.  Try `help help' or `man -k address' or `info address'.
+joanlora@LinuxUpSkillServer:~$ man export
+No manual entry for export
+joanlora@LinuxUpSkillServer:~$ help export
+export: export [-fn] [name[=value] ...] or export -p
+    Set export attribute for shell variables.
+
+    Marks each NAME for automatic export to the environment of subsequently
+    executed commands.  If VALUE is supplied, assign VALUE before exporting.
+
+    Options:
+      -f        refer to shell functions
+      -n        remove the export property from each NAME
+      -p        display a list of all exported variables and functions
+
+    An argument of `--' disables further option processing.
+
+    Exit Status:
+    Returns success unless an invalid option is given or NAME is invalid.
+joanlora@LinuxUpSkillServer:~$ tldr export
+
+  export
+
+  Export shell variables to child processes.
+  More information: https://www.gnu.org/software/bash/manual/bash.html#index-export.
+
+  - Set an environment variable:
+    export VARIABLE=value
+
+  - Unset an environment variable:
+    export -n VARIABLE
+
+  - Export a function to child processes:
+    export -f FUNCTION_NAME
+
+  - Append a pathname to the environment variable `PATH`:
+    export PATH=$PATH:path/to/append
+
+  - Display a list of active exported variables in shell command form:
+    export -p
+
+joanlora@LinuxUpSkillServer:~$ type ip address
+ip is hashed (/usr/sbin/ip)
+-bash: type: address: not found
+joanlora@LinuxUpSkillServer:~$ type ipaddress
+-bash: type: ipaddress: not found
+joanlora@LinuxUpSkillServer:~$ type export
+export is a shell builtin
+joanlora@LinuxUpSkillServer:~$ type mkdir
+mkdir is /usr/bin/mkdir
+joanlora@LinuxUpSkillServer:~$ info export
+info: No menu item 'export' in node '(dir)Top'
+joanlora@LinuxUpSkillServer:~$ info ip address
+joanlora@LinuxUpSkillServer:~$ man hier
+joanlora@LinuxUpSkillServer:~$ pwd
+/home/joanlora
+joanlora@LinuxUpSkillServer:~$ cd /var/log
+joanlora@LinuxUpSkillServer:/var/log$ cdout
+cdout: command not found
+joanlora@LinuxUpSkillServer:/var/log$ cd..
+cd..: command not found
+joanlora@LinuxUpSkillServer:/var/log$ cd.
+cd.: command not found
+joanlora@LinuxUpSkillServer:/var/log$ cdout
+cdout: command not found
+joanlora@LinuxUpSkillServer:/var/log$ cdq
+cdq: command not found
+joanlora@LinuxUpSkillServer:/var/log$ tldr cd
+
+  cd
+
+  Change the current working directory.
+  More information: https://manned.org/cd.
+
+  - Go to the specified directory:
+    cd path/to/directory
+
+  - Go up to the parent of the current directory:
+    cd ..
+
+  - Go to the home directory of the current user:
+    cd
+
+  - Go to the home directory of the specified user:
+    cd ~username
+
+  - Go to the previously chosen directory:
+    cd -
+
+  - Go to the root directory:
+    cd /
+
+joanlora@LinuxUpSkillServer:/var/log$ cd
+joanlora@LinuxUpSkillServer:~$ cd /var/log
+joanlora@LinuxUpSkillServer:/var/log$ cd ..
+joanlora@LinuxUpSkillServer:/var$ cd ..
+joanlora@LinuxUpSkillServer:/$ cd ..
+joanlora@LinuxUpSkillServer:/$ pwd
+/
+joanlora@LinuxUpSkillServer:/$ cd
+joanlora@LinuxUpSkillServer:~$ pwd
+/home/joanlora
+joanlora@LinuxUpSkillServer:~$ ls
+snap
+joanlora@LinuxUpSkillServer:~$ ls -l -t
+total 4
+drwx------ 3 joanlora joanlora 4096 May  5 02:15 snap
+joanlora@LinuxUpSkillServer:~$ mkdir test
+joanlora@LinuxUpSkillServer:~$ pwd
+/home/joanlora
+joanlora@LinuxUpSkillServer:~$ ls
+snap  test
+joanlora@LinuxUpSkillServer:~$ mv test
+mv: missing destination file operand after 'test'
+Try 'mv --help' for more information.
+joanlora@LinuxUpSkillServer:~$ mv test snap
+joanlora@LinuxUpSkillServer:~$ ls
+snap
+joanlora@LinuxUpSkillServer:~$ cd snap
+joanlora@LinuxUpSkillServer:~/snap$ ls
+test  tldr
+joanlora@LinuxUpSkillServer:~/snap$ rmdir test
+joanlora@LinuxUpSkillServer:~/snap$ ls
+tldr
+joanlora@LinuxUpSkillServer:~/snap$ cd
+joanlora@LinuxUpSkillServer:~$ touch
+touch: missing file operand
+Try 'touch --help' for more information.
+joanlora@LinuxUpSkillServer:~$ ls
+snap
+joanlora@LinuxUpSkillServer:~$ touch snap
+joanlora@LinuxUpSkillServer:~$ ls
+snap
+joanlora@LinuxUpSkillServer:~$ cd snap
+joanlora@LinuxUpSkillServer:~/snap$ ls
+tldr
+joanlora@LinuxUpSkillServer:~/snap$ ls
+tldr
+joanlora@LinuxUpSkillServer:~/snap$ cd
+joanlora@LinuxUpSkillServer:~$ pushd
+-bash: pushd: no other directory
+joanlora@LinuxUpSkillServer:~$ pushd /var/log
+/var/log ~
+joanlora@LinuxUpSkillServer:/var/log$ pushd
+~ /var/log
+joanlora@LinuxUpSkillServer:~$ pushd /var/log
+/var/log ~ /var/log
+joanlora@LinuxUpSkillServer:/var/log$ pushd /dev
+/dev /var/log ~ /var/log
+joanlora@LinuxUpSkillServer:/dev$ ls
+autofs           nvme-fabrics  tty18  tty54   ttyS4
+block            nvram         tty19  tty55   ttyS5
+bsg              port          tty2   tty56   ttyS6
+btrfs-control    ppp           tty20  tty57   ttyS7
+cdrom            psaux         tty21  tty58   ttyS8
+char             ptmx          tty22  tty59   ttyS9
+console          ptp0          tty23  tty6    ttyprintk
+core             ptp_hyperv    tty24  tty60   udmabuf
+cpu_dma_latency  pts           tty25  tty61   uinput
+cuse             random        tty26  tty62   urandom
+disk             rfkill        tty27  tty63   userfaultfd
+dma_heap         root          tty28  tty7    vcs
+dri              rtc           tty29  tty8    vcs1
+ecryptfs         rtc0          tty3   tty9    vcs2
+fb0              sda           tty30  ttyS0   vcs3
+fd               sda1          tty31  ttyS1   vcs4
+full             sda14         tty32  ttyS10  vcs5
+fuse             sda15         tty33  ttyS11  vcs6
+hpet             sdb           tty34  ttyS12  vcsa
+hugepages        sdb1          tty35  ttyS13  vcsa1
+hwrng            sg0           tty36  ttyS14  vcsa2
+initctl          sg1           tty37  ttyS15  vcsa3
+input            sg2           tty38  ttyS16  vcsa4
+kmsg             shm           tty39  ttyS17  vcsa5
+log              snapshot      tty4   ttyS18  vcsa6
+loop-control     sr0           tty40  ttyS19  vcsu
+loop0            stderr        tty41  ttyS2   vcsu1
+loop1            stdin         tty42  ttyS20  vcsu2
+loop2            stdout        tty43  ttyS21  vcsu3
+loop3            tty           tty44  ttyS22  vcsu4
+loop4            tty0          tty45  ttyS23  vcsu5
+loop5            tty1          tty46  ttyS24  vcsu6
+loop6            tty10         tty47  ttyS25  vfio
+loop7            tty11         tty48  ttyS26  vga_arbiter
+mapper           tty12         tty49  ttyS27  vhost-net
+mcelog           tty13         tty5   ttyS28  vhost-vsock
+mem              tty14         tty50  ttyS29  vmbus
+mqueue           tty15         tty51  ttyS3   zero
+net              tty16         tty52  ttyS30  zfs
+null             tty17         tty53  ttyS31
+joanlora@LinuxUpSkillServer:/dev$ pushd /etc
+/etc /dev /var/log ~ /var/log
+joanlora@LinuxUpSkillServer:/etc$ pushd
+/dev /etc /var/log ~ /var/log
+joanlora@LinuxUpSkillServer:/dev$ popd
+/etc /var/log ~ /var/log
+joanlora@LinuxUpSkillServer:/etc$ popd
+/var/log ~ /var/log
+joanlora@LinuxUpSkillServer:/var/log$ popd
+~ /var/log
+joanlora@LinuxUpSkillServer:~$ ls
+snap
+joanlora@LinuxUpSkillServer:~$ whoami
+joanlora
+joanlora@LinuxUpSkillServer:~$ passwd
+Changing password for joanlora.
+Current password:
+passwd: Authentication token manipulation error
+passwd: password unchanged
+joanlora@LinuxUpSkillServer:~$ passwd
+Changing password for joanlora.
+Current password:
+passwd: Authentication token manipulation error
+passwd: password unchanged
+joanlora@LinuxUpSkillServer:~$ cat /etc/shadow
+cat: /etc/shadow: Permission denied
+joanlora@LinuxUpSkillServer:~$ sudo cat /etc/shadow
+root:*:19844:0:99999:7:::
+daemon:*:19844:0:99999:7:::
+bin:*:19844:0:99999:7:::
+sys:*:19844:0:99999:7:::
+sync:*:19844:0:99999:7:::
+games:*:19844:0:99999:7:::
+man:*:19844:0:99999:7:::
+lp:*:19844:0:99999:7:::
+mail:*:19844:0:99999:7:::
+news:*:19844:0:99999:7:::
+uucp:*:19844:0:99999:7:::
+proxy:*:19844:0:99999:7:::
+www-data:*:19844:0:99999:7:::
+backup:*:19844:0:99999:7:::
+list:*:19844:0:99999:7:::
+irc:*:19844:0:99999:7:::
+gnats:*:19844:0:99999:7:::
+nobody:*:19844:0:99999:7:::
+systemd-network:*:19844:0:99999:7:::
+systemd-resolve:*:19844:0:99999:7:::
+messagebus:*:19844:0:99999:7:::
+systemd-timesync:*:19844:0:99999:7:::
+syslog:*:19844:0:99999:7:::
+_apt:*:19844:0:99999:7:::
+tss:*:19844:0:99999:7:::
+uuidd:*:19844:0:99999:7:::
+tcpdump:*:19844:0:99999:7:::
+sshd:*:19844:0:99999:7:::
+pollinate:*:19844:0:99999:7:::
+landscape:*:19844:0:99999:7:::
+fwupd-refresh:*:19844:0:99999:7:::
+_chrony:*:19844:0:99999:7:::
+joanlora:!:19848:0:99999:7:::
+lxd:!:19848::::::
+joanlora@LinuxUpSkillServer:~$ sudo reboot
+joanlora@LinuxUpSkillServer:~$ Connection to 52.170.57.166 closed by remote host.
+Connection to 52.170.57.166 closed.
+PS C:\Users\JoanL> ssh -i C:\Users\JoanL\Downloads\LinuxUpSkillServer_key.pem joanlora@52.170.57.166
+ssh: connect to host 52.170.57.166 port 22: Connection refused
+PS C:\Users\JoanL> ssh -i C:\Users\JoanL\Downloads\LinuxUpSkillServer_key.pem joanlora@52.170.57.166
+Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 6.5.0-1019-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+  System information as of Sun May  5 01:06:39 UTC 2024
+
+  System load:  0.22314453125     Processes:             104
+  Usage of /:   2.4% of 61.84GB   Users logged in:       0
+  Memory usage: 34%               IPv4 address for eth0: 10.1.1.4
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+1 update can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Sun May  5 01:06:41 2024 from 70.18.44.130
+joanlora@LinuxUpSkillServer:~$ uptime
+ 02:37:04 up 3 min,  1 user,  load average: 0.12, 0.27, 0.13
+joanlora@LinuxUpSkillServer:~$ uptime
+ 02:38:32 up 4 min,  1 user,  load average: 0.02, 0.20, 0.11
+joanlora@LinuxUpSkillServer:~$ last joanlora
+joanlora pts/0        70.18.44.130     Sun May  5 02:34   still logged in
+joanlora pts/0        70.18.44.130     Sun May  5 01:06 - 02:33  (01:27)
+
+wtmp begins Sun May  5 00:37:55 2024
+joanlora@LinuxUpSkillServer:~$ last root
+
+wtmp begins Sun May  5 00:37:55 2024
+joanlora@LinuxUpSkillServer:~$ sudo lastb
+ssh -i C ssh:notty    70.18.44.130     Sun May  5 01:32 - 01:32  (00:00)
+         ssh:notty    194.169.175.107  Sun May  5 01:30 - 01:30  (00:00)
+
+btmp begins Sun May  5 01:30:07 2024
+joanlora@LinuxUpSkillServer:~$ sudo -i
+root@LinuxUpSkillServer:~# exit
+logout
+joanlora@LinuxUpSkillServer:~$ sudo journalctl -e /usr/bin/sudo
+May 05 02:07:43 LinuxUpSkillServer sudo[5566]: pam_unix(sudo:se>
+May 05 02:07:43 LinuxUpSkillServer sudo[5566]: pam_unix(sudo:se>
+May 05 02:14:38 LinuxUpSkillServer sudo[5668]: joanlora : TTY=p>
+May 05 02:14:38 LinuxUpSkillServer sudo[5668]: pam_unix(sudo:se>
+May 05 02:14:39 LinuxUpSkillServer sudo[5668]: pam_unix(sudo:se>
+May 05 02:14:59 LinuxUpSkillServer sudo[5704]: joanlora : TTY=p>
+May 05 02:14:59 LinuxUpSkillServer sudo[5704]: pam_unix(sudo:se>
+May 05 02:32:59 LinuxUpSkillServer sudo[6147]: joanlora : TTY=p>
+May 05 02:32:59 LinuxUpSkillServer sudo[6147]: pam_unix(sudo:se>
+May 05 02:32:59 LinuxUpSkillServer sudo[6147]: pam_unix(sudo:se>
+May 05 02:33:49 LinuxUpSkillServer sudo[6150]: joanlora : TTY=p>
+May 05 02:33:49 LinuxUpSkillServer sudo[6150]: pam_unix(sudo:se>
+May 05 02:33:49 LinuxUpSkillServer sudo[6150]: pam_unix(sudo:se>
+-- Boot 775152417c494b28ac2fa85a86815c97 --
+May 05 02:34:13 LinuxUpSkillServer sudo[707]:     root : PWD=/v>
+May 05 02:34:13 LinuxUpSkillServer sudo[707]: pam_unix(sudo:ses>
+May 05 02:34:13 LinuxUpSkillServer sudo[707]: pam_unix(sudo:ses>
+May 05 02:34:13 LinuxUpSkillServer sudo[710]:     root : PWD=/v>
+May 05 02:34:13 LinuxUpSkillServer sudo[710]: pam_unix(sudo:ses>
+May 05 02:34:13 LinuxUpSkillServer sudo[710]: pam_unix(sudo:ses>
+May 05 02:34:13 LinuxUpSkillServer sudo[719]:     root : PWD=/v>
+May 05 02:34:13 LinuxUpSkillServer sudo[719]: pam_unix(sudo:ses>
+May 05 02:34:14 LinuxUpSkillServer sudo[719]: pam_unix(sudo:ses>
+May 05 02:39:13 LinuxUpSkillServer sudo[956]: joanlora : TTY=pt>
+May 05 02:39:13 LinuxUpSkillServer sudo[956]: pam_unix(sudo:ses>
+May 05 02:39:13 LinuxUpSkillServer sudo[956]: pam_unix(sudo:ses>
+May 05 02:39:18 LinuxUpSkillServer sudo[964]: joanlora : TTY=pt>
+May 05 02:39:18 LinuxUpSkillServer sudo[964]: pam_unix(sudo-i:s>
+May 05 02:39:24 LinuxUpSkillServer sudo[964]: pam_unix(sudo-i:s>
+May 05 02:39:47 LinuxUpSkillServer sudo[979]: joanlora : TTY=pt>
+May 05 02:39:47 LinuxUpSkillServer sudo[979]: pam_unix(sudo:ses>
+joanlora@LinuxUpSkillServer:~$ sudo hostnamectl set-hostname mylittlecloudbox
+joanlora@LinuxUpSkillServer:~$ out-file
+out-file: command not found
+joanlora@LinuxUpSkillServer:~$ exit
+logout
