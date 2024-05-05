@@ -1,1 +1,2 @@
 ssh -i C:\Users\JoanL\Downloads\LinuxUpSkillServer_key.pem joanlora@52.170.57.166
+Azure VM: https://portal.azure.com/?Microsoft_Azure_Education_correlationId=dcf8dbc4-0e58-45a8-b1cb-21bb5c5381dc&Microsoft_Azure_Education_newA4E=true&Microsoft_Azure_Education_asoSubGuid=c8a3938f-2795-494b-96ea-7a2ddc605447#@lc.cuny.edu/resource/subscriptions/c8a3938f-2795-494b-96ea-7a2ddc605447/resourcegroups/LinuxUpSkillServer_group/providers/Microsoft.Compute/virtualMachines/LinuxUpSkillServer/overview
